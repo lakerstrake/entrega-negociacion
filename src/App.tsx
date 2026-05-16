@@ -51,7 +51,7 @@ const Slide0Hero = ({ onNext }: { onNext: () => void }) => (
       <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
         className="text-5xl md:text-7xl font-extrabold font-outfit leading-tight tracking-tight text-white mb-6">
         Negociación en <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">Proyectos TI</span>
-      </motion.div>
+      </motion.h1>
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
         className="text-base text-slate-400 max-w-2xl font-light leading-relaxed">
         Análisis de posiciones, intereses y acuerdos estratégicos en el desarrollo de software.
