@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronRight, ChevronLeft, Monitor, BookOpen, Coffee, Target, Lightbulb, CheckCircle, Users, Briefcase, ChevronDown } from 'lucide-react'
+import { ChevronRight, ChevronLeft, Monitor, BookOpen, Coffee, Target, Lightbulb, CheckCircle, Users, Briefcase, ArrowRight } from 'lucide-react'
 
 // --- ASSETS ---
 const IMG_HERO = "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
@@ -121,11 +121,7 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [])
 
-  const slideVariants = {
-    initial: { opacity: 0, y: 30 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -30 }
-  }
+
 
   // State for slide 1 (Situations)
   const [activeTab, setActiveTab] = useState(situaciones[0].id)
